@@ -1,0 +1,41 @@
+{
+  "name": "rx-value",
+  "version": "0.0.1",
+  "description": "Objects and lists built on top of RxJS",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./build/",
+    "build": "npm run clean && tsc && npm run copyStaticAssets"
+  },
+  "keywords": [
+    "reactive",
+    "rxjs"
+  ],
+  "license": "ISC",
+  "author": "N. Floris Copier",
+  "exports":  {
+    "./*": {
+      "browser": "./esm/*.js",
+      "node": "./node/*.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hephaestus-Technologies/rx-value.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hephaestus-Technologies/rx-value/issues"
+  },
+  "homepage": "https://github.com/Hephaestus-Technologies/rx-value#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/Hephaestus-Technologies"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "rxjs": "^7.5.5"
+  }
+}
