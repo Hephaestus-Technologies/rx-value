@@ -4,8 +4,8 @@
   "description": "Objects and lists built on top of RxJS",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf ./build/",
-    "build": "npm run clean && tsc && npm run copyStaticAssets"
+    "clean": "rimraf ./bin/",
+    "build": "npm run clean && tsc"
   },
   "keywords": [
     "reactive",
@@ -28,8 +28,7 @@
   },
   "homepage": "https://github.com/Hephaestus-Technologies/rx-value#readme",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/Hephaestus-Technologies"
+    "access": "public"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
