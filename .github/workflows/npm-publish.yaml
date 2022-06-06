@@ -37,6 +37,8 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run: npm publish .bin
+        run: |
+          cp ./README.md ./.bin/README.md
+          npm publish .bin
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
