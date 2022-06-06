@@ -13,12 +13,6 @@
   ],
   "license": "ISC",
   "author": "N. Floris Copier",
-  "exports":  {
-    "./*": {
-      "browser": "./esm/*.js",
-      "node": "./node/*.js"
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hephaestus-Technologies/rx-value.git"
