@@ -29,8 +29,7 @@ jobs:
 
       - name: Build
         run: |
-          tsc --project tsconfig.json --outDir .bin/esm --module ESNext
-          tsc --project tsconfig.json --outDir .bin/node --module CommonJS
+          tsc
           node scripts/bump-version.mjs
         env:
           version: ${{ steps.bump_version.outputs.new_tag }}
